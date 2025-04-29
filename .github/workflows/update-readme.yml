@@ -1,32 +1,26 @@
-name: Generate Stats
+name: Generate GitHub Stats Image
 
 on:
   schedule:
-    - cron: '0 * * * *'  # every 00 hours
+    - cron: '0 0 * * *'  # Every Day 00:00 UTC
   workflow_dispatch:
 
 jobs:
-  update-stats:
+  generate:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Generate GitHub Stats
-        uses: anuraghazra/github-readme-stats@latest
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-        with:
-          username: leegisang
-          count_private: true
-          show_icons: true
-          hide_border: true
-          include_all_commits: true
-
-      - name: Commit & Push
+      - name: Fetch GitHub Stats SVG
         run: |
-          git config --global user.name 'github-actions'
-          git config --global user.email 'github-actions@github.com'
-          git add .
-          git commit -m "Update README with latest stats" || echo "No changes to commit"
+          curl -H "Authorization: token ${{ secrets.GH_TOKEN }}" \
+               "https://github-readme-stats.vercel.app/api?username=leegisang&count_private=true&show_icons=true&hide_border=true" \
+               --output stats.svg
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add stats.svg
+          git commit -m "Update GitHub Stats" || echo "No changes"
           git push
