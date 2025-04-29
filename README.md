@@ -11,4 +11,4 @@
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=leegisang&theme=chalk&row=2&column=3)](https://github.com/ryo-ma/github-profile-trophy)
 
-[![leegisang's github stats](https://github-readme-stats.vercel.app/api?username=leegisang&show_icons=true&hide_border=true)](https://github.com/leegisang) [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=leegisang&layout=compact)](https://github.com/milkclouds)
+[![leegisang's github stats](https://github-readme-stats.vercel.app/api?username=leegisang&show_icons=true&hide_border=true)](https://github.com/leegisang) [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=leegisang&layout=compact)](https://github.com/leegisang)
