@@ -1,0 +1,32 @@
+name: Generate Stats
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # every 00 hours
+  workflow_dispatch:
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Generate GitHub Stats
+        uses: anuraghazra/github-readme-stats@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        with:
+          username: leegisang
+          count_private: true
+          show_icons: true
+          hide_border: true
+          include_all_commits: true
+
+      - name: Commit & Push
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add .
+          git commit -m "Update README with latest stats" || echo "No changes to commit"
+          git push
