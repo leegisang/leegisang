@@ -6,7 +6,7 @@
 * Products : [ [***MediSpoon***](https://medispoon-webclient.vercel.app/) | [***GPTales***](https://gptales.vercel.app/) | [***ExpertEase***](https://expertease.vercel.app/) ]
 
 
-[![trophy](https://leegisang-github-trophy-leegisangs-projects.vercel.app/?theme=flat&row=1&column=5)](https://github.com/leegisang/github-profile-trophy)
+[![trophy](https://leegisang-github-trophy-leegisangs-projects.vercel.app/?theme=flat&row=1&column=5&v=2)](https://github.com/leegisang/github-profile-trophy)
 
 <!--
 
