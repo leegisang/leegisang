@@ -5,4 +5,4 @@
 * Products : [ [***MediSpoon***](https://medispoon-webclient.vercel.app/) | [***GPTales***](https://gptales.vercel.app/) | [***ExpertEase***](https://expertease.vercel.app/) ]
 
 
-[![trophy-svg](https://github-profile-trophy-gules-nine.vercel.app/?theme=flat&row=1&column=7&v=2)](https://github.com/leegisang/github-profile-trophy)
+[![trophy-svg](https://github-profile-trophy-gules-nine.vercel.app/?theme=flat&row=1&column=6&v=2)](https://github.com/leegisang/github-profile-trophy)
